@@ -1,1 +1,245 @@
-Placeholder
+<!DOCTYPE html>
+<html>
+  <title>Joe Zalesky</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+    background-image: url("jup_juno_main.jpg");
+    min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+    background-image: url("jup_juno.jpg");
+    min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+    background-image: url("red_dwarf.jpg");
+    min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    }
+    }
+  </style>
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black" id="myNavbar">
+	<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+	<a href="#about" class="w3-bar-item w3-button "><i class="fa fa-user"></i> ABOUT</a>
+	<a href="#portfolio" class="w3-bar-item w3-button "><i class="fa fa-th"></i> CV & SCIENCE</a>
+	<a href="#contact" class="w3-bar-item w3-button "><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+	<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">CV & SCIENCE</a>
+	<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+	<a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+	<span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">JOE ZALESKY
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT ME</h3>
+      <div class="w3-row">
+	<div class="w3-col m6 w3-center w3-padding-large">
+	  <img src="me_website.png" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+	</div>
+
+	<!-- Hide this text on small devices -->
+	<div class="w3-col m6 w3-padding-large">
+	  <p align="center"><b><i class="fa fa-user w3-margin-left"></i> Joe Zalesky</b></p>
+	  <p>I am currently an astrophysics PhD student within the
+	    School of Earth and Space Exploration (SESE) at ASU and an Future Investigator
+	    under NASA's FINESST award (previously known as NASA's NESSF). I am working under
+	  the advisement of Professors Mike Line and Jenny Patience.</p>
+
+	  <p>I was born in Pittsburgh but grew up in small town/rural
+	  Ohio. I attended UC Berkeley for my undergraduate education,
+	  before beginning my PhD work at ASU. Details on past/current projects
+	  I've worked on are provided in my CV link
+	  below.</p>
+
+	  <p>In my free time I love riding motorycyles that I can afford,
+	  looking at motorcycles that I can't afford, coding, climbing, hiking, running,
+	  and many other things.</p>
+
+	  <p>If you'd like to contact me, my information is provided below.</p>
+	</div>
+      </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+	<span class="w3-xxxlarge w3-text-white w3-wide">SCIENCE</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-center w3-padding-64" id="portfolio">
+      <a href="cv.pdf" class="w3-button w3-black w3-xlarge w3-round">
+	<i class="fa fa-wpforms"></i> My CV
+      </a>
+      <p class="w3-center"><em>Last Updated: October 2021</em></p>
+      <a href="https://ui.adsabs.harvard.edu/public-libraries/UDowXeHjTBCo6tYrOtWxGQ" class="w3-button w3-black w3-xlarge w3-round">
+	<i class="fa fa-newspaper-o"></i> ADS Link
+      </a>
+      <a href="https://orcid.org/0000-0002-2259-4116" class="w3-button w3-black w3-xlarge w3-round">
+	<i class="fa fa-id-card"></i> ORCID ID
+      </a>
+      <h3 class="w3-center">INTERESTS</h3>
+      <p>My main scientific interests lie in understanding and characterizing
+        atmospheric dynamics and composition with a focus on
+        applications to brown dwarfs and exoplanet observations. Other
+        astronomical interests include planet formation and dynamics,
+            along with protoplanetary disk evolution.</p>
+      <h3 class="w3-center">CURRENT PROJECTS</h3>
+      <p><b>Atmospheric Characterization of T/L Dwarfs:</b> The presence of various
+	condensate species in the atmospheres of both brown dwarfs and exoplanets
+	has presented a challenging theoretical modeling task when attempting to
+	match observational spectra. While we are able to constrain the atmospheric
+	abundances of cloud-free, late-T and early-Y brown dwarfs (Zalesky et al. 2019,
+	Line et al. 2015/2017), modeling atmospheres strongly impacted by these cloud
+	species still remains a challenge. <b>My current work focuses on applying the
+	  CHIMERA radiative transfer code combined with several cloud prescriptions available
+	  in the literature to fit T/L dwarf ground-based spectra.</b>
+	This work is the subject of my FINESST award.
+      </p>
+      <p><b>High Resolution Cross Correlation Spectroscopy (HRCCS):</b> HRCCS has emerged as a way
+	to robustly detect molecular signatures using high-resolution (R~10^4/5)
+	ground based observations. This technique has been vetted to work for almost a decade
+	(e.g. Snellen et al. 2010). However it wasn't until recently that such a technique
+	could be used to constrain abundances of individual molecules in a robust statistical
+	framework (e.g. Brogi & Line 2019). <b>My current work focuses on using this novel
+	  statistical framework to jointly fit multiple high and low-resolution observations
+	  of two benchmark planets, HD209458b and HD189733b.</b>
+      </p>
+      <h3 class="w3-center">TEACHING & OUTREACH</h3>
+      <p><b>SESE Open House</b></p>
+      <p>Currently I am part of the SESE Open House Committee which
+      opens the doors of SESE to the public several times a semester in
+      order to <b>show the public the current research
+      that is happening within the department and why this impacts their
+      lives through hands-on activites.</b></p>
+      <p><b><u><a href="https://casper.berkeley.edu/astrobaki/index.php/IDL_Decal">IDL Decal</a></b></u></p>
+      <p>While at UC Berkeley I led and developed most of the current course
+      content for the IDL Decal. This course taught new
+      astrophysics majors the basic, practical programming skills they
+      would need in order to begin conducting research with faculty and
+      also prepare them for future observationally-based upper division
+      courses. <b>I and my co-facilitarors wrote a <a href="http://ugastro.berkeley.edu/~jzalesky/idldecal/idl-decal-textbook.pdf">100-page textbook</a>
+      that has since been used to teach others within and outside the
+      US the basics of progamming.</b></p>
+    </div>
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) 
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div> 
+
+<!-- Modal for full size images on click
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div> -->
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <div class="w3-large w3-center w3-margin-bottom">
+    <br> <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge
+	w3-margin-right"></i> Email: jazalesk (at) asu.edu<br>
+	<i class="fa fa-gitlab fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://gitlab.com/astrophd">GitLab: astrophd</a><br>
+	<i class="fa fa-home fa-fw w3-hover-text-black w3-xlarge w3-marginright"></i>ASU School of Earth and Space
+	Exploration<br> PO Box 871404<br> Tempe, AZ 85287
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+  </body>
+</html>
